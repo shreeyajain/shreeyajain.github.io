@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: At Columbia, I've worked as a Teaching Assistant for the following courses
+description: at Columbia, I've worked as a Teaching Assistant for the following courses
 nav: true
 nav_order: 1
 ---
