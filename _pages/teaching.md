@@ -2,11 +2,11 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: At Columbia, I've worked as a Teaching Assistant for the following courses
 nav: true
-nav_order: 5
+nav_order: 1
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+<li>Spring '22 - COMS 4733 Computational Aspects of Robotics (Instructor: <a href='https://www.cs.columbia.edu/~shurans/'>Professor Shuran Song</a>)</li>
+<li>Fall '22 - COMS 6998 Topics in Robotic Learning (Instructor: <a href='https://www.cs.columbia.edu/~shurans/'>Professor Shuran Song</a>)</li>
+<li>Fall '21 - COMS 4419 Internet Technology, Economics, & Policy (Instructor: <a href='https://www.cs.columbia.edu/~hgs/'>Professor Henning Schulzrinne</a>)</li>
