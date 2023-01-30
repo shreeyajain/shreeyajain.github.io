@@ -1,34 +1,47 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Shreeya":
+  - firstname: ["Shreeya", "S.", "S.J.", "Shreeya Jain", "Shreeya Jain*"]
+    url: https://shreeyajain.github.io/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Portia":
+  - firstname: ["Portia", "P.", "P.W.", "Portia Wang", "Portia Wang*"]
+    url: https://pwang1230.github.io/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Arpit":
+  - firstname: ["Arpit", "A.", "A.B.", "Arpit Bahety", "Arpit Bahety*"]
+    url: https://arpitrf.github.io/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Huy":
+  - firstname: ["Huy", "H.", "H.H.", "Huy Ha"]
+    url: https://www.cs.columbia.edu/~huy/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Manxueying":
+  - firstname: ["Manxueying", "M.", "M.L.", "Manxueying Li", "Manxueying Li*"]
+    url: https://www.linkedin.com/in/mxying-li/
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Shuran":
+  - firstname: ["Shuran", "S.", "S.S.", "Shuran Song"]
+    url: https://www.cs.columbia.edu/~shurans/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Steven":
+  - firstname: ["Steven", "Steve", "S.", "S.F.", "Steven Feiner", "Steve Feiner"]
+    url: http://www.cs.columbia.edu/~feiner/
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Jen-Shuo":
+  - firstname: ["Jen-Shuo", "J.", "J.S.", "J.S.L.", "Jen-Shuo Liu"]
+    url: https://www.linkedin.com/in/jen-shuo-liu-820945149
 
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Nathalie":
+  - firstname: ["Nathalie", "N.", "N.H.", "Nathalie Hager"]
+    url: https://www.linkedin.com/in/nathalie-hager
+
+"Benjamin":
+  - firstname: ["Benjamin", "B.", "B.B.", "Benjamin Burchfiel"]
+    url: http://www.benburchfiel.com/
+
+"Eric":
+  - firstname: ["Eric", "E.", "E.C.", "Eric Cousineau"]
+    url: https://www.eacousineau.com/
+
+"Siyuan":
+  - firstname: ["Siyuan", "S.", "S.F.", "Siyuan Feng"]
+    url: https://www.cs.cmu.edu/~sfeng/

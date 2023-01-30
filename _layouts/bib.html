@@ -5,9 +5,9 @@
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
-          <img class="preview rounded" src="{{ entry.preview }}"> <!-- z-depth-1-->
+          <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview }}"></a> <!-- z-depth-1-->
           {%- else -%}
-          <img class="preview rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
+          <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"></a>
           {%- endif -%}
         {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
@@ -28,7 +28,7 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          <div class="title">{{entry.title}}</div>
+          <a href="{{entry.url}}"><div class="title">{{entry.title}}</div></a>
           <!-- Title -->
           <div class="authors">{{entry.authors}}</div>
           <!-- Author -->
@@ -50,8 +50,8 @@
               {%- endif -%}
             {%- endif -%}
             {%- assign coauthor_url = nil -%}
-            {%- if site.data.coauthors[author.last] -%}
-              {%- for coauthor in site.data.coauthors[author.last] -%}
+            {%- if site.data.coauthors[author.first] -%}
+              {%- for coauthor in site.data.coauthors[author.first] -%}
                 {%- if coauthor.firstname contains author.first -%}
                   {%- assign coauthor_url = coauthor.url -%}
                   {%- break -%}
@@ -61,30 +61,30 @@
             
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>
+                <a style="color:#2698ba;" href="https://shreeyajain.github.io/"><b>{{author.first}} {{author.last}}</b></a>
               {%- else -%}
-                {{author.last}}, {{author.first}}
+                {{author.first}} {{author.last}}
               {%- endif -%}
             {%- else -%}
               {%- unless forloop.last -%}
                 {% if author_is_self %}
-                  <em>{{author.last}}, {{author.first}}</em>,&nbsp;
+                  <a style="color:#2698ba;" href="https://shreeyajain.github.io/"><b>{{author.first}} {{author.last}}</b></a>,&nbsp;
                 {%- else -%}
                   {% if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,&nbsp;
+                    <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>,&nbsp;
                   {%- else -%}
-                    {{author.last}}, {{author.first}},&nbsp;
+                    {{author.first}} {{author.last}},&nbsp;
                   {%- endif -%}
                 {%- endif -%}
               {%- else -%}
                 {%- if author_array_limit == author_array_size %} and {% endif %}
                 {% if author_is_self -%}
-                  <em>{{author.last}}, {{author.first}}</em>
+                  <a style="color:#2698ba;" href="https://shreeyajain.github.io/"><b>{{author.first}} {{author.last}}</b></a>
                 {% else -%}
                   {%- if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
+                    <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
                   {% else -%}
-                    {{author.last}}, {{author.first}}
+                    {{author.first}} {{author.last}}
                   {%- endif -%}
                 {%- endif -%}
               {%- endunless -%}
@@ -150,6 +150,10 @@
           </div>
         {%- endif %}
         
+          {%- if entry.details -%}
+            <div class="details">{{entry.details}}</div>
+          {%- endif -%}
+      
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}

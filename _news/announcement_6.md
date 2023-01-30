@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-03-16
+date: 2022-09-01
 inline: true
 ---
 
-Started working at the Computer Graphics and User Interfaces Lab
+I will be TAing COMS 6998 Topics in Robotic Learning for Professor Song

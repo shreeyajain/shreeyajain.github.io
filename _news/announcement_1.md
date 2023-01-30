@@ -4,4 +4,4 @@ date: 2020-05-12
 inline: true
 ---
 
-Started working on the DARPA-funded project <a href='https://ml4ai.github.io/tomcat/index.html'>ToMCAT</a> at IVILAB
+I started working on the DARPA-funded project <a href='https://ml4ai.github.io/tomcat/index.html'>ToMCAT</a> at IVILAB
