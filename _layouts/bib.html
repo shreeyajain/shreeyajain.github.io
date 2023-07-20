@@ -4,7 +4,8 @@
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
-          {% if entry.preview contains '://' -%}
+        <!-- check this if statement once -->
+          {% if entry.url -%}
           <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview }}"></a> <!-- z-depth-1-->
           {%- else -%}
           <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"></a>
@@ -28,10 +29,13 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
+          {% if entry.url -%}
           <a href="{{entry.url}}"><div class="title">{{entry.title}}</div></a>
-          <!-- Title -->
-          <div class="authors">{{entry.authors}}</div>
+          {%- else -%}
+          <div class="title">{{sentry.title}}</div>
+          {%- endif -%}
           <!-- Author -->
+          <div class="authors">{{entry.authors}}</div>
           <div class="author">
           {% assign author_array_size = entry.author_array | size %}
 
