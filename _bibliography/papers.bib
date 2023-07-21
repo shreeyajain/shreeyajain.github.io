@@ -3,15 +3,27 @@
 
 %% Saved with string encoding Unicode (UTF-8) 
 
-@article{bag2022,
-  	journal={In Submission 2023},
+@article{roco2023,
+	journal={In Submission 2023},
+	author={Zhao, Mandi and Jain, Shreeya and Song, Shuran},
+	abstract={We propose a novel approach to multi-robot collaboration that harnesses the power of pre-trained large language models (LLMs) for both high-level communication and low-level path planning. Robots are equipped with LLMs to discuss and collectively reason task strategies. They then generate sub-task plans and task space waypoint paths, which are used by a multi-arm motion planner to accelerate trajectory planning. We also provide feedback from the environment, such as collision checking, and prompt the LLM agents to improve their plan and waypoints in-context. For evaluation, we introduce RoCoBench, a 6-task benchmark covering a wide range of multi-robot collaboration scenarios, accompanied by a text-only dataset for agent representation and reasoning. We experimentally demonstrate the effectiveness of our approach -- it achieves high success rates across all tasks in RoCoBench and adapts to variations in task semantics. Our dialog setup offers high interpretability and flexibility -- in real world experiments, we show RoCo easily incorporates human-in-the-loop, where a user can communicate and collaborate with a robot agent to complete tasks together.},
+	title={RoCo: Dialectic Multi-Robot Collaboration with Large Language Models},
+	year={2023},
+	arxiv={2307.04738},
+	html={https://project-roco.github.io/},
+	url={https://project-roco.github.io/},
+	preview={roco.png},
+	selected={true}}
+
+@article{bag2023,
+  	journal={IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2023},
 	author={Bahety*, Arpit and Jain*, Shreeya and Ha, Huy and Hager, Nathalie and Burchfiel, Benjamin and Cousineau, Eric and Feng, Siyuan and Song, Shuran},
-	abstract={We introduce a practical robotics solution for the task of heterogeneous bagging, requiring the placement of multiple rigid and deformable objects into a deformable bag. This is a difficult task as it features complex interactions between multiple highly deformable objects under limited observability. To tackle these challenges, we propose a robotic system consisting of two learned policies: a rearrangement policy that learns to place multiple rigid objects and fold deformable objects in order to achieve desirable pre-bagging conditions, and a lifting policy to infer suitable grasp points for bi-manual bag lifting. We evaluate these learned policies on a real-world three-arm robot platform that achieves a 70% heterogeneous bagging success rate with novel objects. To facilitate future research and comparison, we also develop a novel heterogeneous bagging simulation benchmark that will be made publicly available.},
+	abstract={We introduce a practical robotics solution for the task of heterogeneous bagging, requiring the placement of multiple rigid and deformable objects into a deformable bag. This is a difficult task as it features complex interactions between multiple highly deformable objects under limited observability. To tackle these challenges, we propose a robotic system consisting of two learned policies: a rearrangement policy that learns to place multiple rigid objects and fold deformable objects in order to achieve desirable pre-bagging conditions, and a lifting policy to infer suitable grasp points for bi-manual bag lifting. We evaluate these learned policies on a real-world three-arm robot platform that achieves a $70\%$ heterogeneous bagging success rate with novel objects. To facilitate future research and comparison, we also develop a novel heterogeneous bagging simulation benchmark that will be made publicly available.},
 	title={Bag All You Need: Learning a Generalizable Bagging Strategy for Heterogeneous Objects},
 	year={2023},
+	arxiv={2210.09997},
 	html={https://bag-all-you-need.cs.columbia.edu/},
 	url={https://bag-all-you-need.cs.columbia.edu/},
-	arxiv={2210.09997},
 	preview={bag_teaser.png},
 	selected={true}}
 

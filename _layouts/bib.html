@@ -3,12 +3,11 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
-        {%- if entry.preview -%}
-        <!-- check this if statement once -->
-          {% if entry.url -%}
-          <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview }}"></a> <!-- z-depth-1-->
-          {%- else -%}
-          <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"></a>
+          {%- if entry.preview -%}
+            {% if entry.preview contains '://' -%}
+            <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview }}"></a> <!-- z-depth-1-->
+            {%- else -%}
+            <a href="{{entry.url}}"><img class="preview rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"></a>
           {%- endif -%}
         {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
@@ -29,13 +28,10 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          {% if entry.url -%}
           <a href="{{entry.url}}"><div class="title">{{entry.title}}</div></a>
-          {%- else -%}
-          <div class="title">{{sentry.title}}</div>
-          {%- endif -%}
-          <!-- Author -->
+          <!-- Title -->
           <div class="authors">{{entry.authors}}</div>
+          <!-- Author -->
           <div class="author">
           {% assign author_array_size = entry.author_array | size %}
 
